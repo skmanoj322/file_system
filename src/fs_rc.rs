@@ -1,4 +1,4 @@
-use std::cell::{Ref, RefCell};
+use std::cell::RefCell;
 use std::rc::{Rc, Weak};
 
 // I am gussing this is just for the assingining the type here just like the varible it will store the type here
@@ -250,7 +250,7 @@ impl FileSystem {
         }
     }
 
-    pub fn debug_counts(&self) {
+    pub fn _debug_counts(&self) {
         println!("strong={}", Rc::strong_count(&self.root));
         println!("weak={}", Rc::weak_count(&self.root));
     }
